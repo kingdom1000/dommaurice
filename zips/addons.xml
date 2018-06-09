@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="repository.dommaurice" name="Dom Maurice Repo" version="0.0.1" provider-name="dommaurice">
+	<extension point="xbmc.addon.repository" name="Dom Maurice Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
+		</dir>
+		<info compressed="false">https://raw.githubusercontent.com/kingdom1000/repository.dommaurice/master/zips/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/kingdom1000/repository.dommaurice/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/kingdom1000/repository.dommaurice/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Dom's custom addon for Kodi</summary>
+		<description lang="en">Custom add-ons for kodi created for lols</description>
+		<genre>uk</genre>
+	</extension>
+</addon>
+
+<addon id="plugin.video.votw" name="Videos of the Week" version="0.0.1" provider-name="dommaurice">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.python.koding.aio" version="0.0.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Top 100 videos from Reddit</summary>
+		<description lang="en">Top of the week from r/videos</description>
+		<platform>all</platform>
+		<forum>http://www.noobsandnerds.com/support</forum>
+		<website>www.noobsandnerds.com</website>
+		<news></news>
+		<genre>uk</genre>
+		<video_guide></video_guide>
+		<video_preview></video_preview>
+	</extension>
+</addon>
+</addons>
